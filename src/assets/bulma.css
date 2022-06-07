@@ -1,0 +1,204 @@
+/*! @creativebulma/bulma-b-divider v1.1.0 | (c) 2020 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-b-divider */
+@-webkit-keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 17, src/sass/app.sass */
+.b-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 25px 0;
+}
+
+/* line 28, src/sass/app.sass */
+.b-divider::after,
+.b-divider::before {
+  content: "";
+  display: block;
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+/* line 37, src/sass/app.sass */
+.b-divider:not(.is-right)::after {
+  margin-left: 10px;
+}
+
+/* line 41, src/sass/app.sass */
+.b-divider:not(.is-left)::before {
+  margin-right: 10px;
+}
+
+/* line 45, src/sass/app.sass */
+.b-divider.is-left::before {
+  display: none;
+}
+
+/* line 49, src/sass/app.sass */
+.b-divider.is-right::after {
+  display: none;
+}
+
+/* line 52, src/sass/app.sass */
+.b-divider.is-vertical {
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+/* line 56, src/sass/app.sass */
+.b-divider.is-vertical::after,
+.b-divider.is-vertical::before {
+  height: auto;
+  width: 1px;
+}
+
+/* line 61, src/sass/app.sass */
+.b-divider.is-vertical::after {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+/* line 65, src/sass/app.sass */
+.b-divider.is-vertical::before {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-white::after,
+.b-divider.is-white::before {
+  background-color: white;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-black::after,
+.b-divider.is-black::before {
+  background-color: #0a0a0a;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-light::after,
+.b-divider.is-light::before {
+  background-color: whitesmoke;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-dark::after,
+.b-divider.is-dark::before {
+  background-color: #363636;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-primary::after,
+.b-divider.is-primary::before {
+  background-color: #00d1b2;
+}
+
+/* line 80, src/sass/app.sass */
+.b-divider.is-primary.is-light::after,
+.b-divider.is-primary.is-light::before {
+  background-color: #ebfffc;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-link::after,
+.b-divider.is-link::before {
+  background-color: #3273dc;
+}
+
+/* line 80, src/sass/app.sass */
+.b-divider.is-link.is-light::after,
+.b-divider.is-link.is-light::before {
+  background-color: #eef3fc;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-info::after,
+.b-divider.is-info::before {
+  background-color: #3298dc;
+}
+
+/* line 80, src/sass/app.sass */
+.b-divider.is-info.is-light::after,
+.b-divider.is-info.is-light::before {
+  background-color: #eef6fc;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-success::after,
+.b-divider.is-success::before {
+  background-color: #48c774;
+}
+
+/* line 80, src/sass/app.sass */
+.b-divider.is-success.is-light::after,
+.b-divider.is-success.is-light::before {
+  background-color: #effaf3;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-warning::after,
+.b-divider.is-warning::before {
+  background-color: #ffdd57;
+}
+
+/* line 80, src/sass/app.sass */
+.b-divider.is-warning.is-light::after,
+.b-divider.is-warning.is-light::before {
+  background-color: #fffbeb;
+}
+
+/* line 72, src/sass/app.sass */
+.b-divider.is-danger::after,
+.b-divider.is-danger::before {
+  background-color: #f14668;
+}
+
+/* line 80, src/sass/app.sass */
+.b-divider.is-danger.is-light::after,
+.b-divider.is-danger.is-light::before {
+  background-color: #feecf0;
+}
+.box:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.box {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+}
+
+a.box:hover,
+a.box:focus {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px #485fc7;
+}
+
+a.box:active {
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #485fc7;
+}
