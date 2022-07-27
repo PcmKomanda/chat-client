@@ -10,6 +10,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
     "axios": "^0.26.0",
+    "bulma": "^0.9.4",
+    "axios": "^0.27.2",
     "bulma": "^0.9.3",
     "dotenv": "^16.0.1",
     "email-validator": "^2.0.4",
@@ -17,9 +19,11 @@
     "googleapis": "^105.0.0",
     "moment": "^2.29.4",
     "socket.io-client": "^1.5.1",
+    "moment": "^2.29.2",
+    "socket.io-client": "^4.5.1",
     "spectre.css": "^0.5.9",
     "tcp-local-tunnel": "^1.0.6",
-    "vue": "^3.2.25",
+    "vue": "^3.2.37",
     "vue-3-socket.io": "^1.0.4",
     "vue-router": "^4.0.15",
     "vue-socket-io": "^0.3.2",
@@ -30,7 +34,7 @@
   },
   "devDependencies": {
     "@creativebulma/bulma-divider": "^1.1.0",
-    "@vitejs/plugin-vue": "^2.2.0",
+    "@vitejs/plugin-vue": "^2.3.3",
     "sass": "^1.49.9",
     "vite": "^2.8.0"
   }
