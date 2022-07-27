@@ -16,7 +16,7 @@
     "global": "^4.4.0",
     "googleapis": "^105.0.0",
     "moment": "^2.29.2",
-    "socket.io-client": "^1.5.1",
+    "socket.io-client": "^4.5.1",
     "spectre.css": "^0.5.9",
     "tcp-local-tunnel": "^1.0.6",
     "vue": "^3.2.25",
