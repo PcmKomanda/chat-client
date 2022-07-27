@@ -21,7 +21,7 @@
     "socket.io-client": "^4.5.1",
     "spectre.css": "^0.5.9",
     "tcp-local-tunnel": "^1.0.6",
-    "vue": "^3.2.25",
+    "vue": "^3.2.37",
     "vue-3-socket.io": "^1.0.4",
     "vue-router": "^4.0.15",
     "vue-socket-io": "^0.3.2",
